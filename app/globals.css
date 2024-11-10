@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+	  --background: 0 0% 100%; /* White */
+	  --foreground: 30 12% 20%; /* Dark Beige */
+	  --card: 0 0% 100%; /* White */
+	  --card-foreground: 30 12% 20%; /* Dark Beige */
+	  --popover: 0 0% 100%; /* White */
+	  --popover-foreground: 30 12% 20%; /* Dark Beige */
+	  --primary: 39 50% 70%; /* Light Beige */
+	  --primary-foreground: 210 40% 98%; /* Very Light */
+	  --secondary: 30 30% 95%; /* Very Light Beige */
+	  --secondary-foreground: 30 12% 10%; /* Darker Beige */
+	  --muted: 30 30% 95%; /* Very Light Beige */
+	  --muted-foreground: 30 12% 40%; /* Medium Dark Beige */
+	  --accent: 30 30% 95%; /* Very Light Beige */
+	  --accent-foreground: 30 12% 10%; /* Darker Beige */
+	  --destructive: 0 84.2% 60.2%; /* Red */
+	  --destructive-foreground: 210 40% 98%; /* Very Light */
+	  --border: 30 10% 91%; /* Light Beige */
+	  --input: 30 10% 91%; /* Light Beige */
+	  --ring: 39 50% 70%; /* Light Beige */
+	  --radius: 0.5rem;
+	}
+  
+	.dark {
+	  --background: 30 12% 20%; /* Dark Beige */
+	  --foreground: 210 40% 98%; /* Very Light */
+	  --card: 30 12% 20%; /* Dark Beige */
+	  --card-foreground: 210 40% 98%; /* Very Light */
+	  --popover: 30 12% 20%; /* Dark Beige */
+	  --popover-foreground: 210 40% 98%; /* Very Light */
+	  --primary: 39 80% 60%; /* Medium Light Beige */
+	  --primary-foreground: 30 12% 10%; /* Darker Beige */
+	  --secondary: 30 30% 20%; /* Dark Beige */
+	  --secondary-foreground: 210 40% 98%; /* Very Light */
+	  --muted: 30 30% 20%; /* Dark Beige */
+	  --muted-foreground: 30 20% 65%; /* Medium Beige */
+	  --accent: 30 30% 20%; /* Dark Beige */
+	  --accent-foreground: 210 40% 98%; /* Very Light */
+	  --destructive: 0 62.8% 30.6%; /* Red */
+	  --destructive-foreground: 210 40% 98%; /* Very Light */
+	  --border: 30 30% 20%; /* Dark Beige */
+	  --input: 30 30% 20%; /* Dark Beige */
+	  --ring: 39 60% 50%; /* Medium Beige */
+	}
+}
+
+@layer components {
+	.card-hover-3d-effect {
+		@apply hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))_scale(1.05)]
+			transition-transform ease-out	after:content-[""] after:absolute
+			after:inset-0 after:pointer-events-none
+			hover:after:bg-[radial-gradient(at_var(--x)_var(--y),rgba(255,255,255,0.2)_10%,transparent_70%)];
+	}
+}
+
+@layer utilities {
+	.text-shadow {
+		text-shadow: 0.25em 0 0.75em rgba(0, 0, 0, 0.5), 
+					 -0.25em 0 0.75em rgba(0, 0, 0, 0.5), 
+					 0 0 1em rgba(0, 0, 0, 0.3), 
+					 0 0 0.5em rgba(0, 0, 0, 0.2);
+	}
+}

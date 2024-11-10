@@ -1,0 +1,44 @@
+{
+    "ProductsList": {
+        "title": "Featured products"
+    },
+    "Banner": {
+        "title": "Your store for",
+        "subtitle1": "high-quality",
+        "subtitle2": "furniture",
+        "paragraph": "Welcome to Roksosh. Each piece on our platform is thoroughly vetted by our team to guarantee the highest standards of quality."
+    },
+    "Perks": {
+        "perk_name1": "Quick Delivery",
+        "perk_desc1": "Receive your furniture directly in your inbox within seconds and get it in 7 days.",
+        "perk_name2": "Guaranteed Quality",
+        "perk_desc2": "All items on our platform undergo thorough verification by our team to meet our top quality standards. If you're not satisfied, we provide a 2-day refund policy.",
+        "perk_name3": "For the Planet",
+        "perk_desc3": "We are dedicated to donating 1% of our sales to initiatives focused on the preservation and restoration of the natural environment."
+    },
+    "Footer": {
+        "title": "All rights reserved."
+    },
+    "Cart": {
+        "summary": "Order Summary",
+        "total": "Order total",
+        "checkout": "Checkout",
+        "title": "Shopping Cart",
+        "no_items": "No items in the cart",
+        "item_added": "Item added to cart",
+        "item_removed": "Item removed from cart",
+        "all_items_removed": "All items removed from cart",
+        "payment_ok": "Payment completed.",
+        "payment_cancel": "Payment canceled.",
+        "item_already": "Item already in cart",
+        "add": "Add to cart"
+    },
+    "Products": {
+        "sizes": "Sizes",
+        "colors": "Colors",
+        "size": "Size:",
+        "color": "Color:",
+        "no_results": "No results found.",
+        "filters": "Filters"
+    }
+}
